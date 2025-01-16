@@ -68,12 +68,16 @@ public class App {
             for (int rows = 0; rows < arr.length; rows++){
                 int value = arr[rows][col];
                 sum += value;
+                
+                
             }
             for (int cols = 0; cols < arr.length; cols++) {
                 int value = arr[row][cols];
                 sum += value;
 
             }
+            sum=sum-arr[row][col];
+            
             return sum;
         }
 
